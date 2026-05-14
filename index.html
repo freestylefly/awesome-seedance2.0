@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Seedance 2.0</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Seedance 2.0 Case Library</p>
+          <h1>Awesome Seedance 2.0</h1>
+        </div>
+        <a class="source-link" href="https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ" target="_blank" rel="noreferrer">
+          Source Doc
+        </a>
+      </header>
+
+      <main>
+        <section class="summary-panel">
+          <div class="summary-copy">
+            <h2>精选视频生成案例库</h2>
+            <p>
+              汇总 Seedance 2.0 使用手册中的 prompt、参考素材位置和输出视频清单，便于后续补齐媒体文件、分类检索和复刻实验。
+            </p>
+          </div>
+          <div class="stats" id="stats"></div>
+        </section>
+
+        <section class="controls" aria-label="案例筛选">
+          <label class="search-box">
+            <span>搜索</span>
+            <input id="searchInput" type="search" placeholder="输入 prompt、分类或素材名" />
+          </label>
+          <div class="category-tabs" id="categoryTabs"></div>
+        </section>
+
+        <section class="status-note" id="statusNote"></section>
+        <section class="case-grid" id="caseGrid"></section>
+      </main>
+    </div>
+
+    <template id="caseCardTemplate">
+      <article class="case-card">
+        <div class="media-frame">
+          <div class="play-mark"></div>
+          <div class="media-meta">
+            <span class="case-id"></span>
+            <span class="duration"></span>
+          </div>
+        </div>
+        <div class="case-body">
+          <div class="case-heading">
+            <span class="category"></span>
+            <h3></h3>
+          </div>
+          <p class="prompt"></p>
+          <details>
+            <summary>查看完整 prompt</summary>
+            <pre></pre>
+          </details>
+          <div class="asset-list"></div>
+          <div class="case-actions">
+            <button type="button" class="copy-button">Copy Prompt</button>
+            <a class="source" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <script src="./data/cases.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
