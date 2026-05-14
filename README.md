@@ -7,6 +7,7 @@
   <a href="https://github.com/freestylefly/awesome-seedance2.0"><img src="https://img.shields.io/github/forks/freestylefly/awesome-seedance2.0?style=flat-square&color=c84c32" alt="Forks"></a>
   <a href="https://github.com/freestylefly/awesome-seedance2.0"><img src="https://img.shields.io/badge/Cases-42-d6a23a?style=flat-square" alt="Cases"></a>
   <a href="https://github.com/freestylefly/awesome-seedance2.0"><img src="https://img.shields.io/badge/Media-Pending-lightgrey?style=flat-square" alt="Media status"></a>
+  <a href="https://awesome-seedance2-0.vercel.app"><img src="https://img.shields.io/badge/Vercel-Live-000000?style=flat-square" alt="Vercel live site"></a>
 </p>
 
 > Seedance 2.0 case collection for prompt study, multimodal reference design, and video generation workflow reuse.
@@ -24,6 +25,7 @@ The first release focuses on a clean open-source foundation:
 
 ## Quick Links
 
+- [Live website](https://awesome-seedance2-0.vercel.app)
 - [Open the static site](./index.html)
 - [Structured case data](./data/cases.json)
 - [Collection status](./docs/collection-status.md)
@@ -73,7 +75,8 @@ The first release focuses on a clean open-source foundation:
 │   └── outputs/
 ├── scripts/
 │   └── normalize-seedance-rows.mjs
-└── styles.css
+├── styles.css
+└── vercel.json
 ```
 
 ## Local Preview
