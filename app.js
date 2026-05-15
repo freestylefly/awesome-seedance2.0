@@ -26,14 +26,14 @@ let activeCase = null;
 
 function renderStats() {
   const platforms = new Set(payload.cases.map((item) => item.sourcePlatform || 'Source')).size;
-  const aiCovers = payload.cases.filter((item) =>
-    ['ai-generated', 'ai-category'].includes(item.coverStatus)
-  ).length;
+  const directPrompts = payload.cases.filter((item) => !hasInputImages(item) && !hasInputVideos(item))
+    .length;
+  const videoReady = payload.cases.filter(hasVideoOutput).length;
   statsEl.innerHTML = `
     <div><strong>${payload.totalCases}</strong><span>prompts</span></div>
-    <div><strong>${payload.categories.length}</strong><span>categories</span></div>
+    <div><strong>${directPrompts}</strong><span>direct prompts</span></div>
+    <div><strong>${videoReady}</strong><span>video ready</span></div>
     <div><strong>${platforms}</strong><span>sources</span></div>
-    <div><strong>${aiCovers}</strong><span>AI covers</span></div>
   `;
 }
 
@@ -92,8 +92,56 @@ function tagChip(label) {
   return chip;
 }
 
+function hasInputImages(item) {
+  return Boolean(item.inputs?.images?.length);
+}
+
+function hasInputVideos(item) {
+  return Boolean(item.inputs?.videos?.length);
+}
+
 function hasVideoOutput(item) {
   return Boolean(item.output?.localPath);
+}
+
+function caseNumber(item) {
+  const match = item.id.match(/\d+$/);
+  return match ? Number(match[0]) : Number.MAX_SAFE_INTEGER;
+}
+
+function dependencyRank(item) {
+  const imageRef = hasInputImages(item);
+  const videoRef = hasInputVideos(item);
+  if (!imageRef && !videoRef && hasVideoOutput(item)) return 0;
+  if (!imageRef && !videoRef) return 1;
+  if (imageRef && !videoRef) return 2;
+  if (!imageRef && videoRef) return 3;
+  return 4;
+}
+
+function compareCases(a, b) {
+  const rankDiff = dependencyRank(a) - dependencyRank(b);
+  if (rankDiff !== 0) return rankDiff;
+  return caseNumber(a) - caseNumber(b);
+}
+
+function dependencyLabels(item) {
+  const imageRef = hasInputImages(item);
+  const videoRef = hasInputVideos(item);
+  const labels = [];
+  if (!imageRef && !videoRef) labels.push({ text: 'Pure Prompt', tone: 'direct' });
+  if (imageRef && !videoRef) labels.push({ text: 'Image Ref', tone: 'image' });
+  if (!imageRef && videoRef) labels.push({ text: 'Video Ref', tone: 'video' });
+  if (imageRef && videoRef) labels.push({ text: 'Image + Video Ref', tone: 'mixed' });
+  if (hasVideoOutput(item)) labels.push({ text: 'Video Ready', tone: 'ready' });
+  return labels;
+}
+
+function dependencyChip(label) {
+  const chip = document.createElement('span');
+  chip.className = `dependency-chip ${label.tone}`;
+  chip.textContent = label.text;
+  return chip;
 }
 
 async function copyPrompt(prompt, button) {
@@ -108,6 +156,15 @@ async function copyPrompt(prompt, button) {
 function renderDetailAssets(item, sourceUrl) {
   detailAssets.innerHTML = '';
   detailAssets.append(assetChip('案例', item.id, item.category));
+  detailAssets.append(
+    assetChip(
+      '生成方式',
+      dependencyLabels(item)
+        .map((label) => label.text)
+        .join(' / '),
+      'dependency'
+    )
+  );
   detailAssets.append(assetChip('来源平台', sourceUrl, item.sourcePlatform || 'source'));
   if (item.output?.localPath) {
     detailAssets.append(assetChip('输出视频', item.output.localPath, item.output.status || 'collected'));
@@ -159,8 +216,8 @@ function closeDetail() {
 
 function renderCases() {
   gridEl.innerHTML = '';
-  const cases = payload.cases.filter(caseMatches);
-  statusEl.textContent = `${payload.extractionStatus} 当前显示 ${cases.length} / ${payload.totalCases} 个案例。`;
+  const cases = payload.cases.filter(caseMatches).sort(compareCases);
+  statusEl.textContent = `${payload.extractionStatus} Pure Prompt 优先排序，当前显示 ${cases.length} / ${payload.totalCases} 个案例。`;
 
   for (const item of cases) {
     const node = template.content.firstElementChild.cloneNode(true);
@@ -180,6 +237,11 @@ function renderCases() {
       item.prompt.length > 220 ? `${item.prompt.slice(0, 220)}...` : item.prompt;
     node.querySelector('pre').textContent = item.prompt;
     node.querySelector('.source').href = sourceUrl;
+
+    const dependencies = node.querySelector('.dependency-list');
+    for (const label of dependencyLabels(item)) {
+      dependencies.append(dependencyChip(label));
+    }
 
     const mediaFrame = node.querySelector('.media-frame');
     mediaFrame.tabIndex = 0;

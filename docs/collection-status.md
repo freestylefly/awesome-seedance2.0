@@ -8,6 +8,8 @@
 - 已加入 AI 生成的视频感 PNG 封面，前端用 16:9 封面图模拟视频卡片，并叠加播放按钮、时长和来源角标。
 - `media/covers/*.svg` 作为兜底封面保留，后续新增案例没有 AI 封面时仍可正常展示。
 - `case-050 / Food & Beverage Commercial` 已关联本地输出视频 `media/outputs/case-050.mp4`，并抽取 `media/covers/video/case-050.png` 作为列表封面；详情弹层可直接播放并查看完整 prompt。
+- 网站默认按 Pure Prompt 优先展示：无垫图、无垫视频、有输出视频的案例排在最前，含垫图或垫视频的案例排在后面。
+- 前端已切换为深蓝暗黑科技风，卡片会标注 `Pure Prompt`、`Image Ref`、`Video Ref`、`Video Ready` 等依赖类型。
 - 原始视频不作为当前收录门槛。后续仅在来源允许下载或再分发时补充到 `media/outputs/`。
 
 ## Source Gate

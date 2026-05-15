@@ -22,6 +22,8 @@ The current release includes:
 - 42 extracted cases from the Seedance 2.0 Lark document
 - 29 external prompt cases collected from a MIT-licensed GitHub repository
 - AI-generated video-style PNG covers with SVG fallback
+- Pure Prompt first sorting for cases that can generate video without image or video references
+- Dark blue, technology-inspired website cards and detail viewer
 - A static website that runs without a framework or build step
 
 ## Quick Links
@@ -40,6 +42,7 @@ The current release includes:
 - Each case records `sourcePlatform`, `sourceUrl`, `author`, `coverImage`, `coverStatus`, `tags`, and `promptLanguage`.
 - Original videos are optional. They are added only when the source permits download or redistribution.
 - Cover images are marked separately from original video assets. AI covers use `coverStatus: ai-generated` or `coverStatus: ai-category`; extracted video frames use `coverStatus: video-frame`; SVG fallback covers use `coverStatus: generated`.
+- The website sorts Pure Prompt cases first, then image-reference cases, video-reference cases, and mixed-reference cases.
 - Cases with sensitive, restricted, or uncertain rights are either skipped or marked with `caution`.
 
 ## Category Overview
