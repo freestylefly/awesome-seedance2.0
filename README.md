@@ -39,7 +39,7 @@ The current release includes:
 - A formal case must include a complete prompt and a source URL.
 - Each case records `sourcePlatform`, `sourceUrl`, `author`, `coverImage`, `coverStatus`, `tags`, and `promptLanguage`.
 - Original videos are optional. They are added only when the source permits download or redistribution.
-- Cover images are marked separately from original video assets. AI covers use `coverStatus: ai-generated` or `coverStatus: ai-category`; SVG fallback covers use `coverStatus: generated`.
+- Cover images are marked separately from original video assets. AI covers use `coverStatus: ai-generated` or `coverStatus: ai-category`; extracted video frames use `coverStatus: video-frame`; SVG fallback covers use `coverStatus: generated`.
 - Cases with sensitive, restricted, or uncertain rights are either skipped or marked with `caution`.
 
 ## Category Overview
@@ -118,7 +118,7 @@ Each case in `data/cases.json` includes:
 - `sourceUrl`: original source URL
 - `author`: source author or contributor group
 - `coverImage`: local cover image path
-- `coverStatus`: `source`, `ai-generated`, `ai-category`, or `generated`
+- `coverStatus`: `source`, `ai-generated`, `ai-category`, `video-frame`, or `generated`
 - `tags`: searchable prompt tags
 - `promptLanguage`: `zh`, `en`, or `mixed`
 - `caution`: rights or safety note when needed

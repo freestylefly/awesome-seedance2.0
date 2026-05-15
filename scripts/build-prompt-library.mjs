@@ -28,6 +28,22 @@ const categoryCoverMap = new Map([
   ['运镜技巧', 'media/covers/ai/category-camera.png']
 ]);
 
+const localOutputs = new Map([
+  [
+    'case-050',
+    {
+      label: 'Food & Beverage Commercial',
+      duration: '00:08',
+      localPath: 'media/outputs/case-050.mp4',
+      status: 'collected'
+    }
+  ]
+]);
+
+const localVideoCovers = new Map([
+  ['case-050', 'media/covers/video/case-050.png']
+]);
+
 const externalCases = [
   {
     title: 'Professional Portrait',
@@ -605,6 +621,14 @@ function preferredCover(id, category = '') {
     };
   }
 
+  const videoCoverPath = localVideoCovers.get(id);
+  if (videoCoverPath && existsSync(resolve(videoCoverPath))) {
+    return {
+      path: videoCoverPath,
+      status: 'video-frame'
+    };
+  }
+
   const categoryPath = categoryCoverMap.get(category);
   if (categoryPath && existsSync(resolve(categoryPath))) {
     return {
@@ -641,6 +665,7 @@ function enrichLarkCase(item, index) {
 function externalCase(entry, nextId, existing) {
   const id = `case-${String(nextId).padStart(3, '0')}`;
   const cover = preferredCover(id, entry.category);
+  const output = localOutputs.get(id);
   return {
     id,
     title: entry.title,
@@ -677,7 +702,7 @@ function externalCase(entry, nextId, existing) {
           ]
         : []
     },
-    output: {
+    output: output || {
       label: entry.title,
       duration: entry.duration,
       localPath: '',

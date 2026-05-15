@@ -72,12 +72,37 @@
           <p class="caution"></p>
           <div class="asset-list"></div>
           <div class="case-actions">
+            <button type="button" class="detail-button">Details</button>
             <button type="button" class="copy-button">Copy Prompt</button>
             <a class="source" target="_blank" rel="noreferrer">Source</a>
           </div>
         </div>
       </article>
     </template>
+
+    <div class="detail-modal" id="caseDetail" hidden>
+      <div class="detail-backdrop" data-close-detail></div>
+      <article class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+        <button type="button" class="detail-close" data-close-detail>Close</button>
+        <div class="detail-media" id="detailMedia"></div>
+        <div class="detail-content">
+          <div class="detail-heading">
+            <span class="detail-category" id="detailCategory"></span>
+            <h2 id="detailTitle"></h2>
+            <p id="detailMeta"></p>
+          </div>
+          <div class="detail-actions">
+            <button type="button" id="detailCopy">Copy Prompt</button>
+            <a id="detailSource" target="_blank" rel="noreferrer">Source</a>
+          </div>
+          <div class="detail-assets" id="detailAssets"></div>
+          <section class="detail-prompt">
+            <h3>Prompt</h3>
+            <pre id="detailPrompt"></pre>
+          </section>
+        </div>
+      </article>
+    </div>
 
     <script src="./data/cases.js"></script>
     <script src="./app.js"></script>

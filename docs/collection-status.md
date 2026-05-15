@@ -7,6 +7,7 @@
 - 每条案例都包含完整 prompt、来源平台、来源链接、作者信息和本地封面图。
 - 已加入 AI 生成的视频感 PNG 封面，前端用 16:9 封面图模拟视频卡片，并叠加播放按钮、时长和来源角标。
 - `media/covers/*.svg` 作为兜底封面保留，后续新增案例没有 AI 封面时仍可正常展示。
+- `case-050 / Food & Beverage Commercial` 已关联本地输出视频 `media/outputs/case-050.mp4`，并抽取 `media/covers/video/case-050.png` 作为列表封面；详情弹层可直接播放并查看完整 prompt。
 - 原始视频不作为当前收录门槛。后续仅在来源允许下载或再分发时补充到 `media/outputs/`。
 
 ## Source Gate
@@ -16,7 +17,7 @@
 1. 有完整可复制 prompt。
 2. 有可访问来源链接。
 3. 能标记来源平台和作者。
-4. 封面来源明确，或使用 `coverStatus: ai-generated`、`coverStatus: ai-category`、`coverStatus: generated` 标记。
+4. 封面来源明确，或使用 `coverStatus: ai-generated`、`coverStatus: ai-category`、`coverStatus: video-frame`、`coverStatus: generated` 标记。
 
 ## 下一步
 

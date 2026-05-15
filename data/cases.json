@@ -2239,8 +2239,8 @@
       "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#33-food--beverage-commercial",
       "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
       "sourceLicense": "MIT",
-      "coverImage": "media/covers/ai/case-003.png",
-      "coverStatus": "ai-category",
+      "coverImage": "media/covers/video/case-050.png",
+      "coverStatus": "video-frame",
       "collectedAt": "2026-05-15T04:31:28.400Z",
       "tags": [
         "food",
@@ -2259,8 +2259,8 @@
       "output": {
         "label": "Food & Beverage Commercial",
         "duration": "00:08",
-        "localPath": "",
-        "status": "not-collected"
+        "localPath": "media/outputs/case-050.mp4",
+        "status": "collected"
       },
       "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#33-food--beverage-commercial"
     },

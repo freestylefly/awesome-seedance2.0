@@ -10,8 +10,19 @@ const gridEl = document.querySelector('#caseGrid');
 const statusEl = document.querySelector('#statusNote');
 const searchInput = document.querySelector('#searchInput');
 const template = document.querySelector('#caseCardTemplate');
+const detailModal = document.querySelector('#caseDetail');
+const detailMedia = document.querySelector('#detailMedia');
+const detailCategory = document.querySelector('#detailCategory');
+const detailTitle = document.querySelector('#detailTitle');
+const detailMeta = document.querySelector('#detailMeta');
+const detailCopy = document.querySelector('#detailCopy');
+const detailSource = document.querySelector('#detailSource');
+const detailAssets = document.querySelector('#detailAssets');
+const detailPrompt = document.querySelector('#detailPrompt');
+const detailClose = document.querySelector('.detail-close');
 
 const categories = ['全部', ...payload.categories];
+let activeCase = null;
 
 function renderStats() {
   const platforms = new Set(payload.cases.map((item) => item.sourcePlatform || 'Source')).size;
@@ -30,6 +41,7 @@ function coverStatusLabel(status) {
   if (status === 'source') return 'source cover';
   if (status === 'ai-generated') return 'AI cover';
   if (status === 'ai-category') return 'AI category cover';
+  if (status === 'video-frame') return 'video frame';
   return 'generated cover';
 }
 
@@ -80,6 +92,71 @@ function tagChip(label) {
   return chip;
 }
 
+function hasVideoOutput(item) {
+  return Boolean(item.output?.localPath);
+}
+
+async function copyPrompt(prompt, button) {
+  await navigator.clipboard.writeText(prompt);
+  const original = button.textContent;
+  button.textContent = 'Copied';
+  setTimeout(() => {
+    button.textContent = original;
+  }, 1200);
+}
+
+function renderDetailAssets(item, sourceUrl) {
+  detailAssets.innerHTML = '';
+  detailAssets.append(assetChip('案例', item.id, item.category));
+  detailAssets.append(assetChip('来源平台', sourceUrl, item.sourcePlatform || 'source'));
+  if (item.output?.localPath) {
+    detailAssets.append(assetChip('输出视频', item.output.localPath, item.output.status || 'collected'));
+  } else {
+    detailAssets.append(assetChip('输出视频', '', item.output?.status || 'not-collected'));
+  }
+}
+
+function renderDetailMedia(item) {
+  detailMedia.innerHTML = '';
+  if (hasVideoOutput(item)) {
+    const video = document.createElement('video');
+    video.src = item.output.localPath;
+    video.controls = true;
+    video.playsInline = true;
+    video.preload = 'auto';
+    detailMedia.append(video);
+    return;
+  }
+
+  const image = document.createElement('img');
+  image.src = item.coverImage;
+  image.alt = `${item.title} cover`;
+  detailMedia.append(image);
+}
+
+function openDetail(item) {
+  const sourceUrl = item.sourceUrl || item.source;
+  activeCase = item;
+  renderDetailMedia(item);
+  renderDetailAssets(item, sourceUrl);
+  detailCategory.textContent = item.category;
+  detailTitle.textContent = `${item.id} / ${item.title}`;
+  detailMeta.textContent = `${item.sourcePlatform || 'Source'} · ${item.duration || 'video'} · ${coverStatusLabel(item.coverStatus)}`;
+  detailPrompt.textContent = item.prompt;
+  detailSource.href = sourceUrl;
+  detailModal.hidden = false;
+  document.body.classList.add('modal-open');
+  detailClose.focus();
+}
+
+function closeDetail() {
+  const video = detailMedia.querySelector('video');
+  if (video) video.pause();
+  detailModal.hidden = true;
+  document.body.classList.remove('modal-open');
+  activeCase = null;
+}
+
 function renderCases() {
   gridEl.innerHTML = '';
   const cases = payload.cases.filter(caseMatches);
@@ -103,6 +180,18 @@ function renderCases() {
       item.prompt.length > 220 ? `${item.prompt.slice(0, 220)}...` : item.prompt;
     node.querySelector('pre').textContent = item.prompt;
     node.querySelector('.source').href = sourceUrl;
+
+    const mediaFrame = node.querySelector('.media-frame');
+    mediaFrame.tabIndex = 0;
+    mediaFrame.setAttribute('role', 'button');
+    mediaFrame.setAttribute('aria-label', `Open ${item.title} details`);
+    mediaFrame.addEventListener('click', () => openDetail(item));
+    mediaFrame.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openDetail(item);
+      }
+    });
 
     const tags = node.querySelector('.tag-list');
     for (const tag of (item.tags || []).slice(0, 5)) {
@@ -128,14 +217,10 @@ function renderCases() {
       assets.append(assetChip('原始视频', item.output.localPath, item.output.status));
     }
 
+    node.querySelector('.detail-button').addEventListener('click', () => openDetail(item));
+
     const copyButton = node.querySelector('.copy-button');
-    copyButton.addEventListener('click', async () => {
-      await navigator.clipboard.writeText(item.prompt);
-      copyButton.textContent = 'Copied';
-      setTimeout(() => {
-        copyButton.textContent = 'Copy Prompt';
-      }, 1200);
-    });
+    copyButton.addEventListener('click', () => copyPrompt(item.prompt, copyButton));
 
     gridEl.append(node);
   }
@@ -149,6 +234,18 @@ function render() {
 searchInput.addEventListener('input', (event) => {
   state.query = event.target.value;
   renderCases();
+});
+
+detailModal.addEventListener('click', (event) => {
+  if (event.target.matches('[data-close-detail]')) closeDetail();
+});
+
+detailCopy.addEventListener('click', () => {
+  if (activeCase) copyPrompt(activeCase.prompt, detailCopy);
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && !detailModal.hidden) closeDetail();
 });
 
 renderStats();
