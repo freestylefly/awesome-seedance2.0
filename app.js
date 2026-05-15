@@ -15,13 +15,22 @@ const categories = ['全部', ...payload.categories];
 
 function renderStats() {
   const platforms = new Set(payload.cases.map((item) => item.sourcePlatform || 'Source')).size;
-  const generatedCovers = payload.cases.filter((item) => item.coverStatus === 'generated').length;
+  const aiCovers = payload.cases.filter((item) =>
+    ['ai-generated', 'ai-category'].includes(item.coverStatus)
+  ).length;
   statsEl.innerHTML = `
     <div><strong>${payload.totalCases}</strong><span>prompts</span></div>
     <div><strong>${payload.categories.length}</strong><span>categories</span></div>
     <div><strong>${platforms}</strong><span>sources</span></div>
-    <div><strong>${generatedCovers}</strong><span>covers</span></div>
+    <div><strong>${aiCovers}</strong><span>AI covers</span></div>
   `;
+}
+
+function coverStatusLabel(status) {
+  if (status === 'source') return 'source cover';
+  if (status === 'ai-generated') return 'AI cover';
+  if (status === 'ai-category') return 'AI category cover';
+  return 'generated cover';
 }
 
 function renderTabs() {
@@ -89,8 +98,7 @@ function renderCases() {
     node.querySelector('.category').textContent = item.category;
     node.querySelector('h3').textContent = item.title;
     node.querySelector('.author').textContent = item.author || 'Unknown author';
-    node.querySelector('.cover-status').textContent =
-      item.coverStatus === 'source' ? 'source cover' : 'generated cover';
+    node.querySelector('.cover-status').textContent = coverStatusLabel(item.coverStatus);
     node.querySelector('.prompt').textContent =
       item.prompt.length > 220 ? `${item.prompt.slice(0, 220)}...` : item.prompt;
     node.querySelector('pre').textContent = item.prompt;

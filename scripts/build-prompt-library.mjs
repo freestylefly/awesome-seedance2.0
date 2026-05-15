@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 
 const jsonOut = resolve('data/cases.json');
@@ -9,6 +9,24 @@ const githubSource =
   'https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples';
 const githubReadme =
   'https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#readme';
+
+const categoryCoverMap = new Map([
+  ['动作复刻', 'media/covers/ai/case-001.png'],
+  ['视频编辑', 'media/covers/ai/case-004.png'],
+  ['商业创意', 'media/covers/ai/case-003.png'],
+  ['视频延长', 'media/covers/ai/case-005.png'],
+  ['运镜复刻', 'media/covers/ai/category-camera.png'],
+  ['镜头连贯', 'media/covers/ai/case-071.png'],
+  ['多模态案例', 'media/covers/ai/category-multimodal.png'],
+  ['情绪与声音', 'media/covers/ai/category-audio.png'],
+  ['音乐卡点', 'media/covers/ai/category-audio.png'],
+  ['人物与写实', 'media/covers/ai/case-043.png'],
+  ['社媒短片', 'media/covers/ai/category-social.png'],
+  ['多镜头叙事', 'media/covers/ai/case-055.png'],
+  ['风格与特效', 'media/covers/ai/category-style-vfx.png'],
+  ['声音与口型', 'media/covers/ai/case-064.png'],
+  ['运镜技巧', 'media/covers/ai/category-camera.png']
+]);
 
 const externalCases = [
   {
@@ -578,8 +596,32 @@ function inferTags(item) {
   return [...tags].slice(0, 6);
 }
 
+function preferredCover(id, category = '') {
+  const aiPath = `media/covers/ai/${id}.png`;
+  if (existsSync(resolve(aiPath))) {
+    return {
+      path: aiPath,
+      status: 'ai-generated'
+    };
+  }
+
+  const categoryPath = categoryCoverMap.get(category);
+  if (categoryPath && existsSync(resolve(categoryPath))) {
+    return {
+      path: categoryPath,
+      status: 'ai-category'
+    };
+  }
+
+  return {
+    path: `media/covers/${id}.svg`,
+    status: 'generated'
+  };
+}
+
 function enrichLarkCase(item, index) {
   const id = item.id || `case-${String(index + 1).padStart(3, '0')}`;
+  const cover = preferredCover(id, item.category);
   return {
     ...item,
     id,
@@ -587,8 +629,8 @@ function enrichLarkCase(item, index) {
     sourceUrl: item.sourceUrl || item.source || larkSource,
     author: item.author || 'ByteDance Seedance 2.0 document',
     sourceLicense: item.sourceLicense || 'Source document attribution',
-    coverImage: item.coverImage || `media/covers/${id}.svg`,
-    coverStatus: item.coverStatus || 'generated',
+    coverImage: cover.path,
+    coverStatus: cover.status,
     collectedAt: item.collectedAt || '2026-05-14T15:58:05.489Z',
     tags: inferTags(item),
     promptLanguage: item.promptLanguage || promptLanguage(item.prompt),
@@ -596,8 +638,9 @@ function enrichLarkCase(item, index) {
   };
 }
 
-function externalCase(entry, nextId) {
+function externalCase(entry, nextId, existing) {
   const id = `case-${String(nextId).padStart(3, '0')}`;
+  const cover = preferredCover(id, entry.category);
   return {
     id,
     title: entry.title,
@@ -608,9 +651,9 @@ function externalCase(entry, nextId) {
     sourceUrl: `${githubSource}#${entry.anchor || slug(entry.title)}`,
     author: 'makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors',
     sourceLicense: 'MIT',
-    coverImage: `media/covers/${id}.svg`,
-    coverStatus: 'generated',
-    collectedAt: new Date().toISOString(),
+    coverImage: cover.path,
+    coverStatus: cover.status,
+    collectedAt: existing?.collectedAt || new Date().toISOString(),
     tags: inferTags(entry),
     promptLanguage: promptLanguage(entry.prompt),
     caution: entry.caution || '',
@@ -645,6 +688,9 @@ function externalCase(entry, nextId) {
 }
 
 const current = JSON.parse(readFileSync(jsonOut, 'utf8'));
+const currentByPrompt = new Map(
+  current.cases.map((item) => [normalizePrompt(item.prompt), item])
+);
 const larkCases = current.cases
   .filter((item) => {
     const sourceUrl = item.sourceUrl || item.source || '';
@@ -658,12 +704,14 @@ for (const entry of externalCases) {
   const key = normalizePrompt(entry.prompt);
   if (seen.has(key)) continue;
   seen.add(key);
-  cases.push(externalCase(entry, cases.length + 1));
+  cases.push(externalCase(entry, cases.length + 1, currentByPrompt.get(key)));
 }
 
 mkdirSync(coverDir, { recursive: true });
 for (const [index, item] of cases.entries()) {
-  writeFileSync(resolve(item.coverImage), coverSvg(item, index));
+  if (item.coverImage.endsWith('.svg')) {
+    writeFileSync(resolve(item.coverImage), coverSvg(item, index));
+  }
 }
 
 const payload = {
@@ -684,7 +732,7 @@ const payload = {
       status: 'prompt-collected'
     }
   ],
-  collectedAt: new Date().toISOString(),
+  collectedAt: current.collectedAt || new Date().toISOString(),
   extractionStatus:
     'Prompt library mode: every listed case includes a complete prompt, source attribution, and a cover image. Original videos are optional and only added when legal download access is available.',
   totalCases: cases.length,
