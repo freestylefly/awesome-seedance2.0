@@ -30,6 +30,15 @@ const categoryCoverMap = new Map([
 
 const localOutputs = new Map([
   [
+    'case-011',
+    {
+      label: '棋局复仇对决',
+      duration: '00:10',
+      localPath: 'media/outputs/case-011.mp4',
+      status: 'collected'
+    }
+  ],
+  [
     'case-050',
     {
       label: 'Food & Beverage Commercial',
@@ -42,6 +51,51 @@ const localOutputs = new Map([
 
 const localVideoCovers = new Map([
   ['case-050', 'media/covers/video/case-050.png']
+]);
+
+const larkTitleOverrides = new Map([
+  ['case-001', '古风双姝刀剑切磋'],
+  ['case-002', '小猫暖浴治愈片'],
+  ['case-003', '磁吸蝴蝶结广告'],
+  ['case-004', '零食酒吧反转短片'],
+  ['case-005', '圆滚小狗山坡续写'],
+  ['case-006', '长廊惊险追逐运镜'],
+  ['case-007', 'AI眼镜星际穿梭'],
+  ['case-008', '红衣特工一镜到底'],
+  ['case-009', '小狗卡门治愈续写'],
+  ['case-010', '桥上冷酷复仇反转'],
+  ['case-011', '棋局复仇对决'],
+  ['case-012', '多造型鱼眼走秀'],
+  ['case-013', '小猫沐浴治愈片'],
+  ['case-014', '电梯惊恐环绕运镜'],
+  ['case-015', '赖床叫醒短剧'],
+  ['case-016', '画中人偷喝可乐'],
+  ['case-017', '星夜双人华丽打斗'],
+  ['case-018', '猴子奶茶店点单'],
+  ['case-019', '健身品牌续写广告'],
+  ['case-020', '向日葵滑板午后续写'],
+  ['case-021', '油烟机对比广告'],
+  ['case-022', '写字楼生态纪录片'],
+  ['case-023', '鱼眼马匹对话'],
+  ['case-024', '梦幻卡点换景'],
+  ['case-025', '伦敦蒸汽车街景'],
+  ['case-026', '下班回家情绪转场'],
+  ['case-027', 'Lucky Coffee早餐续写'],
+  ['case-028', '西语战术小队集结'],
+  ['case-029', '棋局到海边一镜转场'],
+  ['case-030', '极地鹅绒羽绒服广告'],
+  ['case-031', '舷窗云朵冰淇淋'],
+  ['case-032', '口红漫画分镜演绎'],
+  ['case-033', '印度炸鸡音乐片'],
+  ['case-034', '海报女生卡点换装'],
+  ['case-035', '戏曲花旦舞台替换'],
+  ['case-036', '豫剧铡美案对峙'],
+  ['case-037', '女星舞台运镜复刻'],
+  ['case-038', '复古公路旅行MV'],
+  ['case-039', '咆哮变熊特效'],
+  ['case-040', '屋顶跑者一镜追踪'],
+  ['case-041', '风光场景音乐卡点'],
+  ['case-042', '玫瑰花蕊变装特效']
 ]);
 
 const externalCases = [
@@ -645,10 +699,13 @@ function preferredCover(id, category = '') {
 
 function enrichLarkCase(item, index) {
   const id = item.id || `case-${String(index + 1).padStart(3, '0')}`;
+  const title = larkTitleOverrides.get(id) || item.title;
   const cover = preferredCover(id, item.category);
+  const output = localOutputs.get(id) || item.output;
   return {
     ...item,
     id,
+    title,
     sourcePlatform: item.sourcePlatform || 'Lark Document',
     sourceUrl: item.sourceUrl || item.source || larkSource,
     author: item.author || 'ByteDance Seedance 2.0 document',
@@ -658,6 +715,7 @@ function enrichLarkCase(item, index) {
     collectedAt: item.collectedAt || '2026-05-14T15:58:05.489Z',
     tags: inferTags(item),
     promptLanguage: item.promptLanguage || promptLanguage(item.prompt),
+    output: output ? { ...output, label: title } : output,
     source: item.source || item.sourceUrl || larkSource
   };
 }
