@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="卧虎藏龙 切磋2">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#102a43"/>
-      <stop offset="55%" stop-color="#2ec4b6"/>
-      <stop offset="100%" stop-color="#f6d365"/>
+      <stop offset="0%" stop-color="#1a120b"/>
+      <stop offset="55%" stop-color="#b91c1c"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
     </linearGradient>
     <radialGradient id="light" cx="65%" cy="35%" r="60%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
@@ -16,19 +16,42 @@
         <feFuncA type="table" tableValues="0 0.12"/>
       </feComponentTransfer>
     </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#000000" flood-opacity="0.24"/>
+    </filter>
   </defs>
   <rect width="1280" height="720" fill="url(#bg)"/>
   <rect width="1280" height="720" fill="url(#light)"/>
   <rect width="1280" height="720" filter="url(#grain)" opacity="0.32"/>
-  <g opacity="0.34" fill="none" stroke="#fff" stroke-width="2">
-    <path d="M80 560 C260 420 360 640 540 500 S850 390 1180 520"/>
-    <path d="M120 150 C320 70 470 210 640 140 S940 30 1160 150"/>
+  <g opacity="0.22" fill="none" stroke="#fff" stroke-width="2">
+    <path d="M80 582 C260 442 360 662 540 522 S850 412 1180 542"/>
+    <path d="M120 120 C320 40 470 180 640 110 S940 0 1160 120"/>
   </g>
-  <rect x="70" y="74" width="1140" height="572" rx="34" fill="#0b0f12" opacity="0.28" stroke="#fff" stroke-opacity="0.24"/>
-  <text x="104" y="132" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="2">Lark Document</text>
-  <text x="104" y="178" fill="#ffffff" opacity="0.82" font-family="Inter, Arial, sans-serif" font-size="24">动作复刻 · 00:15</text>
-  <text x="104" y="312" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">卧虎藏龙 切磋2</text>
-  <text x="104" y="574" fill="#ffffff" opacity="0.78" font-family="Inter, Arial, sans-serif" font-size="24">video-reference / image-reference / audio</text>
-  <circle cx="1090" cy="538" r="72" fill="#ffffff" opacity="0.92"/>
-  <path d="M1072 500 L1072 576 L1138 538 Z" fill="#111827"/>
+  <g filter="url(#softShadow)">
+    <g transform="translate(666 168)">
+    <circle cx="250" cy="152" r="122" fill="#fbbf24" opacity="0.5"/>
+    <path d="M74 340 C174 276 302 276 452 340" fill="none" stroke="#fff" stroke-width="5" opacity="0.38"/>
+    <g fill="#f8fafc" stroke="#111827" stroke-width="5">
+      <circle cx="178" cy="156" r="30"/>
+      <path d="M154 190 C132 238 128 284 114 344 L180 344 C188 280 204 234 228 196 Z"/>
+      <circle cx="350" cy="154" r="29"/>
+      <path d="M320 194 C350 238 368 284 384 344 L316 344 C306 282 286 234 266 198 Z"/>
+    </g>
+    <path d="M210 205 L420 82" stroke="#fef3c7" stroke-width="10" stroke-linecap="round"/>
+    <path d="M306 208 L90 72" stroke="#fef3c7" stroke-width="10" stroke-linecap="round"/>
+    <path d="M96 110 C150 90 228 92 280 134" fill="none" stroke="#fff" stroke-width="3" opacity="0.52"/>
+    <path d="M306 98 C376 92 442 116 484 166" fill="none" stroke="#fff" stroke-width="3" opacity="0.52"/>
+  </g>
+  </g>
+  <rect x="64" y="62" width="1152" height="596" rx="38" fill="none" stroke="#fff" stroke-opacity="0.2"/>
+  <rect x="88" y="84" width="226" height="48" rx="24" fill="#020617" opacity="0.5"/>
+  <text x="116" y="116" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="850" letter-spacing="1.3">Lark Document</text>
+  <rect x="88" y="144" width="310" height="46" rx="23" fill="#ffffff" opacity="0.18"/>
+  <text x="116" y="174" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="760">动作复刻 · 00:15</text>
+  <path d="M64 430 C310 386 502 430 684 462 C856 492 1036 492 1216 438 V658 H64 Z" fill="#020617" opacity="0.52"/>
+  <rect x="86" y="446" width="750" height="174" rx="28" fill="#020617" opacity="0.34"/>
+  <text x="118" y="520" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="850">卧虎藏龙 切磋2</text>
+  <text x="118" y="604" fill="#ffffff" opacity="0.78" font-family="Inter, Arial, sans-serif" font-size="22">video-reference / image-reference / audio</text>
+  <circle cx="1120" cy="560" r="68" fill="#ffffff" opacity="0.94"/>
+  <path d="M1104 522 L1104 598 L1168 560 Z" fill="#111827"/>
 </svg>

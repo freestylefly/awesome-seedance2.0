@@ -319,19 +319,202 @@ function wrapWords(value, maxLength = 28, maxLines = 3) {
 }
 
 const palettes = [
-  ['#102a43', '#2ec4b6', '#f6d365'],
-  ['#251605', '#f46036', '#2e294e'],
-  ['#203a43', '#70e1f5', '#ffd194'],
-  ['#1f1c2c', '#928dab', '#f5af19'],
-  ['#2b5876', '#4e4376', '#ffb88c'],
-  ['#0f2027', '#ff512f', '#dd2476'],
-  ['#283048', '#859398', '#f6f7d7'],
-  ['#141e30', '#0cebeb', '#fefefe']
+  ['#13293d', '#38b2ac', '#f6ad55'],
+  ['#261447', '#ff5c8a', '#ffd166'],
+  ['#0f172a', '#3b82f6', '#f8fafc'],
+  ['#1f2937', '#10b981', '#f59e0b'],
+  ['#2d1b69', '#00d4ff', '#ff9f1c'],
+  ['#2f1b12', '#f97316', '#fde68a'],
+  ['#111827', '#ef4444', '#f9fafb'],
+  ['#073b4c', '#06d6a0', '#ffd166']
 ];
 
+function categoryTheme(item, index) {
+  const category = item.category || '';
+  if (/动作|武侠/.test(category)) return ['#1a120b', '#b91c1c', '#fbbf24'];
+  if (/商业/.test(category)) return ['#111827', '#2563eb', '#facc15'];
+  if (/声音|情绪|音乐/.test(category)) return ['#171717', '#db2777', '#22d3ee'];
+  if (/运镜|镜头/.test(category)) return ['#0f172a', '#14b8a6', '#f8fafc'];
+  if (/风格|特效/.test(category)) return ['#210124', '#7c3aed', '#22d3ee'];
+  if (/社媒/.test(category)) return ['#131313', '#f97316', '#fef3c7'];
+  if (/叙事/.test(category)) return ['#172554', '#c2410c', '#f8fafc'];
+  if (/编辑|延长/.test(category)) return ['#0f172a', '#84cc16', '#fefce8'];
+  if (/人物/.test(category)) return ['#1f2937', '#e11d48', '#fdf2f8'];
+  return palettes[index % palettes.length];
+}
+
+function sceneArt(item, index) {
+  const category = item.category || '';
+  const title = item.title || '';
+  const prompt = item.prompt || '';
+  const text = `${category} ${title} ${prompt}`;
+
+  if (/动作复刻/.test(category) || (!category && /动作|武侠|打斗|对战|剑/.test(text))) {
+    return `<g transform="translate(666 168)">
+    <circle cx="250" cy="152" r="122" fill="#fbbf24" opacity="0.5"/>
+    <path d="M74 340 C174 276 302 276 452 340" fill="none" stroke="#fff" stroke-width="5" opacity="0.38"/>
+    <g fill="#f8fafc" stroke="#111827" stroke-width="5">
+      <circle cx="178" cy="156" r="30"/>
+      <path d="M154 190 C132 238 128 284 114 344 L180 344 C188 280 204 234 228 196 Z"/>
+      <circle cx="350" cy="154" r="29"/>
+      <path d="M320 194 C350 238 368 284 384 344 L316 344 C306 282 286 234 266 198 Z"/>
+    </g>
+    <path d="M210 205 L420 82" stroke="#fef3c7" stroke-width="10" stroke-linecap="round"/>
+    <path d="M306 208 L90 72" stroke="#fef3c7" stroke-width="10" stroke-linecap="round"/>
+    <path d="M96 110 C150 90 228 92 280 134" fill="none" stroke="#fff" stroke-width="3" opacity="0.52"/>
+    <path d="M306 98 C376 92 442 116 484 166" fill="none" stroke="#fff" stroke-width="3" opacity="0.52"/>
+  </g>`;
+  }
+
+  if (
+    /商业创意/.test(category) ||
+    (!category && /商业|商品|广告|product|brand|coffee|smartphone|蝴蝶结|零食|包/.test(text))
+  ) {
+    return `<g transform="translate(678 126)">
+    <ellipse cx="282" cy="424" rx="232" ry="42" fill="#020617" opacity="0.25"/>
+    <rect x="152" y="190" width="260" height="226" rx="34" fill="#f8fafc" opacity="0.96"/>
+    <rect x="184" y="222" width="196" height="56" rx="18" fill="#2563eb" opacity="0.88"/>
+    <rect x="202" y="306" width="160" height="82" rx="20" fill="#facc15" opacity="0.92"/>
+    <path d="M146 168 C188 76 370 76 420 168" fill="none" stroke="#fff" stroke-width="10" opacity="0.74"/>
+    <path d="M58 126 L204 214 M512 126 L366 214" stroke="#fff" stroke-width="4" opacity="0.45"/>
+    <circle cx="78" cy="118" r="34" fill="#facc15" opacity="0.7"/>
+    <circle cx="502" cy="118" r="34" fill="#60a5fa" opacity="0.7"/>
+  </g>`;
+  }
+
+  if (
+    /情绪与声音|声音与口型|音乐卡点/.test(category) ||
+    (!category && /声音|情绪|音乐|口型|dialogue|Audio|voice|lip/.test(text))
+  ) {
+    return `<g transform="translate(672 122)">
+    <circle cx="250" cy="188" r="106" fill="#fdf2f8" opacity="0.95"/>
+    <path d="M168 170 C190 126 310 126 332 170" fill="none" stroke="#111827" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="214" cy="190" r="10" fill="#111827"/>
+    <circle cx="292" cy="190" r="10" fill="#111827"/>
+    <path d="M226 238 C248 256 282 256 304 238" fill="none" stroke="#111827" stroke-width="8" stroke-linecap="round"/>
+    <g fill="#22d3ee" opacity="0.86">
+      <rect x="48" y="366" width="22" height="70" rx="11"/>
+      <rect x="88" y="322" width="22" height="114" rx="11"/>
+      <rect x="128" y="350" width="22" height="86" rx="11"/>
+      <rect x="382" y="330" width="22" height="106" rx="11"/>
+      <rect x="422" y="292" width="22" height="144" rx="11"/>
+      <rect x="462" y="354" width="22" height="82" rx="11"/>
+    </g>
+    <path d="M44 478 C144 420 236 516 332 456 S474 420 540 476" fill="none" stroke="#fff" stroke-width="5" opacity="0.58"/>
+  </g>`;
+  }
+
+  if (
+    /运镜复刻|运镜技巧/.test(category) ||
+    (!category && /运镜|镜头|Camera|tracking|dolly|crane|handheld|环绕|跟拍/.test(text))
+  ) {
+    return `<g transform="translate(650 124)">
+    <rect x="52" y="84" width="458" height="296" rx="34" fill="#0b1220" opacity="0.78" stroke="#fff" stroke-opacity="0.28" stroke-width="4"/>
+    <rect x="102" y="132" width="160" height="100" rx="18" fill="#14b8a6" opacity="0.86"/>
+    <rect x="294" y="132" width="150" height="100" rx="18" fill="#f8fafc" opacity="0.82"/>
+    <circle cx="218" cy="310" r="46" fill="#f8fafc" opacity="0.96"/>
+    <circle cx="218" cy="310" r="20" fill="#0f172a"/>
+    <path d="M70 454 C178 398 298 514 478 416" fill="none" stroke="#facc15" stroke-width="10" stroke-linecap="round"/>
+    <path d="M462 414 L426 396 M462 414 L436 448" stroke="#facc15" stroke-width="10" stroke-linecap="round"/>
+  </g>`;
+  }
+
+  if (
+    /风格与特效/.test(category) ||
+    (!category && /风格|特效|VFX|cyberpunk|anime|vintage|style/.test(text))
+  ) {
+    return `<g transform="translate(650 118)">
+    <rect x="68" y="88" width="420" height="318" rx="36" fill="#0b1020" opacity="0.72"/>
+    <path d="M68 406 L218 226 L306 318 L374 232 L488 406 Z" fill="#22d3ee" opacity="0.78"/>
+    <path d="M68 88 L488 88 L488 406 Z" fill="#a855f7" opacity="0.38"/>
+    <path d="M128 138 L430 352" stroke="#fff" stroke-width="8" opacity="0.62"/>
+    <circle cx="180" cy="164" r="42" fill="#facc15" opacity="0.86"/>
+    <g stroke="#fff" stroke-width="3" opacity="0.45">
+      <path d="M104 472 H468"/>
+      <path d="M160 444 V500"/>
+      <path d="M270 432 V512"/>
+      <path d="M382 444 V500"/>
+    </g>
+  </g>`;
+  }
+
+  if (
+    /社媒短片/.test(category) ||
+    (!category && /社媒|meme|TikTok|Instagram|montage|transformation|cat/.test(text))
+  ) {
+    return `<g transform="translate(720 86)">
+    <rect x="78" y="48" width="292" height="520" rx="52" fill="#111827" opacity="0.94"/>
+    <rect x="108" y="94" width="232" height="420" rx="34" fill="#fff7ed"/>
+    <circle cx="224" cy="302" r="72" fill="#f97316" opacity="0.88"/>
+    <path d="M182 282 L154 238 L206 252 Z" fill="#f97316"/>
+    <path d="M266 282 L294 238 L242 252 Z" fill="#f97316"/>
+    <circle cx="198" cy="302" r="8" fill="#111827"/>
+    <circle cx="250" cy="302" r="8" fill="#111827"/>
+    <path d="M200 338 C218 350 232 350 250 338" fill="none" stroke="#111827" stroke-width="7" stroke-linecap="round"/>
+    <path d="M24 174 H116 M28 414 H116 M336 188 H484 M336 426 H464" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity="0.58"/>
+  </g>`;
+  }
+
+  if (
+    /多镜头叙事/.test(category) ||
+    (!category && /多镜头|叙事|story|Scene|Shot|Act/.test(text))
+  ) {
+    return `<g transform="translate(650 122)">
+    <rect x="52" y="62" width="204" height="150" rx="22" fill="#f8fafc" opacity="0.92"/>
+    <rect x="286" y="62" width="204" height="150" rx="22" fill="#f97316" opacity="0.88"/>
+    <rect x="52" y="250" width="204" height="150" rx="22" fill="#60a5fa" opacity="0.9"/>
+    <rect x="286" y="250" width="204" height="150" rx="22" fill="#f8fafc" opacity="0.92"/>
+    <path d="M128 166 C164 118 204 118 230 166 M350 166 C386 118 426 118 452 166 M126 354 C162 306 202 306 228 354 M350 354 C386 306 426 306 452 354" fill="none" stroke="#111827" stroke-width="7" opacity="0.8"/>
+    <path d="M256 136 H286 M256 324 H286 M154 212 V250 M388 212 V250" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+  </g>`;
+  }
+
+  if (
+    /视频编辑|视频延长|镜头连贯/.test(category) ||
+    (!category && /编辑|延长|transition|first frame|last frame|替换|换成|补充/.test(text))
+  ) {
+    return `<g transform="translate(650 132)">
+    <rect x="54" y="86" width="180" height="236" rx="26" fill="#f8fafc" opacity="0.9"/>
+    <rect x="328" y="86" width="180" height="236" rx="26" fill="#bef264" opacity="0.9"/>
+    <path d="M236 202 C278 154 302 154 328 202" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+    <path d="M320 170 L330 202 L298 194" fill="#fff"/>
+    <g fill="#111827" opacity="0.82">
+      <rect x="92" y="360" width="382" height="22" rx="11"/>
+      <rect x="112" y="402" width="92" height="18" rx="9"/>
+      <rect x="226" y="402" width="134" height="18" rx="9"/>
+      <rect x="382" y="402" width="72" height="18" rx="9"/>
+    </g>
+    <path d="M152 136 L136 196 L198 174 L108 272" fill="none" stroke="#111827" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  </g>`;
+  }
+
+  if (
+    /人物与写实/.test(category) ||
+    (!category && /人物|portrait|professional|woman|figure/.test(text))
+  ) {
+    return `<g transform="translate(684 104)">
+    <circle cx="260" cy="166" r="104" fill="#fdf2f8" opacity="0.96"/>
+    <path d="M158 432 C178 324 342 324 362 432 Z" fill="#111827" opacity="0.9"/>
+    <circle cx="260" cy="178" r="78" fill="#fce7f3"/>
+    <path d="M190 164 C218 96 308 96 334 164 C300 132 224 132 190 164 Z" fill="#111827" opacity="0.86"/>
+    <path d="M88 168 L28 118 M432 168 L518 118" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity="0.52"/>
+    <circle cx="28" cy="118" r="38" fill="#fb7185" opacity="0.8"/>
+    <circle cx="518" cy="118" r="38" fill="#f8fafc" opacity="0.76"/>
+  </g>`;
+  }
+
+  return `<g transform="translate(664 132)">
+    <rect x="56" y="92" width="166" height="196" rx="24" fill="#f8fafc" opacity="0.9"/>
+    <rect x="252" y="70" width="204" height="242" rx="26" fill="#22d3ee" opacity="0.82"/>
+    <circle cx="354" cy="191" r="58" fill="#111827" opacity="0.84"/>
+    <path d="M336 160 L336 222 L390 191 Z" fill="#fff"/>
+    <path d="M84 356 H464 M114 398 H406" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity="0.58"/>
+  </g>`;
+}
+
 function coverSvg(item, index) {
-  const palette = palettes[index % palettes.length];
-  const lines = wrapWords(item.title, /[\u4e00-\u9fff]/.test(item.title) ? 12 : 26, 3);
+  const palette = categoryTheme(item, index);
+  const lines = wrapWords(item.title, /[\u4e00-\u9fff]/.test(item.title) ? 12 : 28, 2);
   const tags = (item.tags || []).slice(0, 3).join(' / ') || item.category;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="${escapeXml(item.title)}">
   <defs>
@@ -351,26 +534,36 @@ function coverSvg(item, index) {
         <feFuncA type="table" tableValues="0 0.12"/>
       </feComponentTransfer>
     </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#000000" flood-opacity="0.24"/>
+    </filter>
   </defs>
   <rect width="1280" height="720" fill="url(#bg)"/>
   <rect width="1280" height="720" fill="url(#light)"/>
   <rect width="1280" height="720" filter="url(#grain)" opacity="0.32"/>
-  <g opacity="0.34" fill="none" stroke="#fff" stroke-width="2">
-    <path d="M80 560 C260 420 360 640 540 500 S850 390 1180 520"/>
-    <path d="M120 150 C320 70 470 210 640 140 S940 30 1160 150"/>
+  <g opacity="0.22" fill="none" stroke="#fff" stroke-width="2">
+    <path d="M80 582 C260 442 360 662 540 522 S850 412 1180 542"/>
+    <path d="M120 120 C320 40 470 180 640 110 S940 0 1160 120"/>
   </g>
-  <rect x="70" y="74" width="1140" height="572" rx="34" fill="#0b0f12" opacity="0.28" stroke="#fff" stroke-opacity="0.24"/>
-  <text x="104" y="132" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="2">${escapeXml(item.sourcePlatform || 'Seedance')}</text>
-  <text x="104" y="178" fill="#ffffff" opacity="0.82" font-family="Inter, Arial, sans-serif" font-size="24">${escapeXml(item.category)} · ${escapeXml(item.duration || 'video')}</text>
+  <g filter="url(#softShadow)">
+    ${sceneArt(item, index)}
+  </g>
+  <rect x="64" y="62" width="1152" height="596" rx="38" fill="none" stroke="#fff" stroke-opacity="0.2"/>
+  <rect x="88" y="84" width="226" height="48" rx="24" fill="#020617" opacity="0.5"/>
+  <text x="116" y="116" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="850" letter-spacing="1.3">${escapeXml(item.sourcePlatform || 'Seedance')}</text>
+  <rect x="88" y="144" width="310" height="46" rx="23" fill="#ffffff" opacity="0.18"/>
+  <text x="116" y="174" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="760">${escapeXml(item.category)} · ${escapeXml(item.duration || 'video')}</text>
+  <path d="M64 430 C310 386 502 430 684 462 C856 492 1036 492 1216 438 V658 H64 Z" fill="#020617" opacity="0.52"/>
+  <rect x="86" y="446" width="750" height="174" rx="28" fill="#020617" opacity="0.34"/>
   ${lines
     .map(
       (line, lineIndex) =>
-        `<text x="104" y="${312 + lineIndex * 72}" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">${escapeXml(line)}</text>`
+        `<text x="118" y="${520 + lineIndex * 58}" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="850">${escapeXml(line)}</text>`
     )
     .join('\n  ')}
-  <text x="104" y="574" fill="#ffffff" opacity="0.78" font-family="Inter, Arial, sans-serif" font-size="24">${escapeXml(tags)}</text>
-  <circle cx="1090" cy="538" r="72" fill="#ffffff" opacity="0.92"/>
-  <path d="M1072 500 L1072 576 L1138 538 Z" fill="#111827"/>
+  <text x="118" y="604" fill="#ffffff" opacity="0.78" font-family="Inter, Arial, sans-serif" font-size="22">${escapeXml(tags)}</text>
+  <circle cx="1120" cy="560" r="68" fill="#ffffff" opacity="0.94"/>
+  <path d="M1104 522 L1104 598 L1168 560 Z" fill="#111827"/>
 </svg>
 `;
 }

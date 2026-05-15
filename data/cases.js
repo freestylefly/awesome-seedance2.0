@@ -15,7 +15,7 @@ window.SEEDANCE_CASE_DATA = {
       "status": "prompt-collected"
     }
   ],
-  "collectedAt": "2026-05-15T03:07:41.566Z",
+  "collectedAt": "2026-05-15T03:25:33.976Z",
   "extractionStatus": "Prompt library mode: every listed case includes a complete prompt, source attribution, and a cover image. Original videos are optional and only added when legal download access is available.",
   "totalCases": 71,
   "categories": [
@@ -1986,7 +1986,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-043.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.970Z",
       "tags": [
         "portrait",
         "dolly-in",
@@ -2019,7 +2019,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-044.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.970Z",
       "tags": [
         "character",
         "reveal",
@@ -2052,7 +2052,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-045.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.970Z",
       "tags": [
         "sports",
         "tracking-shot",
@@ -2085,7 +2085,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-046.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "brand",
         "mascot",
@@ -2126,7 +2126,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-047.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "dialogue",
         "lip-sync",
@@ -2173,7 +2173,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-048.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "product",
         "unboxing",
@@ -2207,7 +2207,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-049.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "lifestyle",
         "ad",
@@ -2241,7 +2241,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-050.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "food",
         "macro",
@@ -2276,7 +2276,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-051.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "tech",
         "orbit",
@@ -2310,7 +2310,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-052.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "meme",
         "comedy",
@@ -2344,7 +2344,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-053.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "montage",
         "jump-cuts",
@@ -2378,7 +2378,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-054.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "transformation",
         "split-screen",
@@ -2411,7 +2411,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-055.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "short-drama",
         "dialogue",
@@ -2445,7 +2445,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-056.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "style-transfer",
         "cyberpunk",
@@ -2484,7 +2484,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-057.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "anime",
         "style-transfer",
@@ -2531,7 +2531,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-058.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "film-look",
         "color-grade",
@@ -2563,7 +2563,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-059.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "storyboard",
         "chase",
@@ -2596,7 +2596,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-060.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "product-story",
         "three-act",
@@ -2630,7 +2630,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-061.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "drama",
         "emotion",
@@ -2664,7 +2664,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-062.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "multilingual",
         "lip-sync",
@@ -2696,7 +2696,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-063.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "music-sync",
         "audio",
@@ -2737,7 +2737,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-064.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "sound-effects",
         "slow-motion",
@@ -2770,7 +2770,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-065.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "voice-over",
         "commercial",
@@ -2802,7 +2802,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-066.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "dolly-in",
         "camera",
@@ -2834,7 +2834,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-067.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "compound-camera",
         "pan",
@@ -2867,7 +2867,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-068.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "tracking-shot",
         "gimbal",
@@ -2900,7 +2900,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-069.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "crane",
         "camera",
@@ -2939,7 +2939,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-070.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "handheld",
         "documentary",
@@ -2971,7 +2971,7 @@ window.SEEDANCE_CASE_DATA = {
       "sourceLicense": "MIT",
       "coverImage": "media/covers/case-071.svg",
       "coverStatus": "generated",
-      "collectedAt": "2026-05-15T03:07:41.561Z",
+      "collectedAt": "2026-05-15T03:25:33.971Z",
       "tags": [
         "transition",
         "first-frame",
