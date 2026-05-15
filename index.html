@@ -10,7 +10,7 @@
     <div class="app-shell">
       <header class="topbar">
         <div>
-          <p class="eyebrow">Seedance 2.0 Case Library</p>
+          <p class="eyebrow">Seedance 2.0 Prompt Library</p>
           <h1>Awesome Seedance 2.0</h1>
         </div>
         <a class="source-link" href="https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ" target="_blank" rel="noreferrer">
@@ -21,9 +21,9 @@
       <main>
         <section class="summary-panel">
           <div class="summary-copy">
-            <h2>精选视频生成案例库</h2>
+            <h2>精选提示词案例库</h2>
             <p>
-              汇总 Seedance 2.0 使用手册中的 prompt、参考素材位置和输出视频清单，便于后续补齐媒体文件、分类检索和复刻实验。
+              汇总可复核来源中的 Seedance 2.0 prompt、作者信息和封面图，优先服务检索、复制和复刻实验。
             </p>
           </div>
           <div class="stats" id="stats"></div>
@@ -32,7 +32,7 @@
         <section class="controls" aria-label="案例筛选">
           <label class="search-box">
             <span>搜索</span>
-            <input id="searchInput" type="search" placeholder="输入 prompt、分类或素材名" />
+            <input id="searchInput" type="search" placeholder="输入 prompt、分类、来源或标签" />
           </label>
           <div class="category-tabs" id="categoryTabs"></div>
         </section>
@@ -45,22 +45,31 @@
     <template id="caseCardTemplate">
       <article class="case-card">
         <div class="media-frame">
-          <div class="play-mark"></div>
+          <img class="cover-image" alt="" loading="lazy" />
+          <div class="cover-shade"></div>
+          <div class="play-mark" aria-hidden="true"></div>
           <div class="media-meta">
             <span class="case-id"></span>
             <span class="duration"></span>
           </div>
+          <div class="platform-badge"></div>
         </div>
         <div class="case-body">
           <div class="case-heading">
             <span class="category"></span>
             <h3></h3>
           </div>
+          <div class="source-row">
+            <span class="author"></span>
+            <span class="cover-status"></span>
+          </div>
           <p class="prompt"></p>
+          <div class="tag-list"></div>
           <details>
             <summary>查看完整 prompt</summary>
             <pre></pre>
           </details>
+          <p class="caution"></p>
           <div class="asset-list"></div>
           <div class="case-actions">
             <button type="button" class="copy-button">Copy Prompt</button>

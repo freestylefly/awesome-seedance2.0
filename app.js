@@ -14,11 +14,13 @@ const template = document.querySelector('#caseCardTemplate');
 const categories = ['全部', ...payload.categories];
 
 function renderStats() {
-  const pendingOutputs = payload.cases.filter((item) => item.output.status === 'pending').length;
+  const platforms = new Set(payload.cases.map((item) => item.sourcePlatform || 'Source')).size;
+  const generatedCovers = payload.cases.filter((item) => item.coverStatus === 'generated').length;
   statsEl.innerHTML = `
-    <div><strong>${payload.totalCases}</strong><span>cases</span></div>
+    <div><strong>${payload.totalCases}</strong><span>prompts</span></div>
     <div><strong>${payload.categories.length}</strong><span>categories</span></div>
-    <div><strong>${pendingOutputs}</strong><span>media pending</span></div>
+    <div><strong>${platforms}</strong><span>sources</span></div>
+    <div><strong>${generatedCovers}</strong><span>covers</span></div>
   `;
 }
 
@@ -41,7 +43,15 @@ function caseMatches(item) {
   const query = state.query.trim().toLowerCase();
   const byCategory = state.category === '全部' || item.category === state.category;
   if (!query) return byCategory;
-  const text = [item.title, item.category, item.prompt, item.output.label]
+  const text = [
+    item.title,
+    item.category,
+    item.prompt,
+    item.output?.label,
+    item.sourcePlatform,
+    item.author,
+    ...(item.tags || [])
+  ]
     .join(' ')
     .toLowerCase();
   return byCategory && text.includes(query);
@@ -50,7 +60,14 @@ function caseMatches(item) {
 function assetChip(label, path, status) {
   const chip = document.createElement('span');
   chip.className = `asset-chip ${status}`;
-  chip.textContent = `${label}: ${path}`;
+  chip.textContent = path ? `${label}: ${path}` : `${label}: ${status}`;
+  return chip;
+}
+
+function tagChip(label) {
+  const chip = document.createElement('span');
+  chip.className = 'tag-chip';
+  chip.textContent = label;
   return chip;
 }
 
@@ -61,22 +78,47 @@ function renderCases() {
 
   for (const item of cases) {
     const node = template.content.firstElementChild.cloneNode(true);
+    const sourceUrl = item.sourceUrl || item.source;
+    const coverImage = item.coverImage || 'data/images/banner.svg';
+
+    node.querySelector('.cover-image').src = coverImage;
+    node.querySelector('.cover-image').alt = `${item.title} cover`;
     node.querySelector('.case-id').textContent = item.id;
     node.querySelector('.duration').textContent = item.duration || 'video';
+    node.querySelector('.platform-badge').textContent = item.sourcePlatform || 'Source';
     node.querySelector('.category').textContent = item.category;
     node.querySelector('h3').textContent = item.title;
-    node.querySelector('.prompt').textContent = item.prompt.slice(0, 180);
+    node.querySelector('.author').textContent = item.author || 'Unknown author';
+    node.querySelector('.cover-status').textContent =
+      item.coverStatus === 'source' ? 'source cover' : 'generated cover';
+    node.querySelector('.prompt').textContent =
+      item.prompt.length > 220 ? `${item.prompt.slice(0, 220)}...` : item.prompt;
     node.querySelector('pre').textContent = item.prompt;
-    node.querySelector('.source').href = item.source;
+    node.querySelector('.source').href = sourceUrl;
+
+    const tags = node.querySelector('.tag-list');
+    for (const tag of (item.tags || []).slice(0, 5)) {
+      tags.append(tagChip(tag));
+    }
+
+    const caution = node.querySelector('.caution');
+    if (item.caution) {
+      caution.textContent = item.caution;
+    } else {
+      caution.remove();
+    }
 
     const assets = node.querySelector('.asset-list');
-    for (const image of item.inputs.images) {
+    for (const image of item.inputs?.images || []) {
       assets.append(assetChip(image.label, image.localPath, image.status));
     }
-    for (const video of item.inputs.videos) {
+    for (const video of item.inputs?.videos || []) {
       assets.append(assetChip(video.label, video.localPath, video.status));
     }
-    assets.append(assetChip('输出视频', item.output.localPath, item.output.status));
+    assets.append(assetChip('来源平台', sourceUrl, item.sourcePlatform || 'source'));
+    if (item.output?.localPath || item.output?.status) {
+      assets.append(assetChip('原始视频', item.output.localPath, item.output.status));
+    }
 
     const copyButton = node.querySelector('.copy-button');
     copyButton.addEventListener('click', async () => {

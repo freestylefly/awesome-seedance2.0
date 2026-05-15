@@ -1,19 +1,39 @@
 {
   "name": "Awesome Seedance 2.0",
+  "description": "Open Seedance 2.0 prompt case library with source attribution and video-style cover cards.",
   "sourceDocument": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
-  "collectedAt": "2026-05-14T15:58:05.489Z",
-  "extractionStatus": "Prompt and asset labels were extracted from the Lark document. Original media files still need direct download/export access from Lark.",
-  "totalCases": 42,
+  "sourceCollections": [
+    {
+      "platform": "Lark Document",
+      "url": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "status": "prompt-extracted"
+    },
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#readme",
+      "license": "MIT",
+      "status": "prompt-collected"
+    }
+  ],
+  "collectedAt": "2026-05-15T03:07:41.566Z",
+  "extractionStatus": "Prompt library mode: every listed case includes a complete prompt, source attribution, and a cover image. Original videos are optional and only added when legal download access is available.",
+  "totalCases": 71,
   "categories": [
     "动作复刻",
-    "商业创意",
+    "多镜头叙事",
     "多模态案例",
-    "情绪与声音",
-    "视频延长",
-    "视频编辑",
-    "运镜复刻",
+    "风格与特效",
     "镜头连贯",
-    "音乐卡点"
+    "情绪与声音",
+    "人物与写实",
+    "商业创意",
+    "社媒短片",
+    "声音与口型",
+    "视频编辑",
+    "视频延长",
+    "音乐卡点",
+    "运镜复刻",
+    "运镜技巧"
   ],
   "cases": [
     {
@@ -61,7 +81,21 @@
         "duration": "00:15",
         "localPath": "media/outputs/case-001.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-001.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "image-reference",
+        "audio",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-002",
@@ -87,7 +121,19 @@
         "duration": "00:15",
         "localPath": "media/outputs/case-002.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-002.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "audio"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-003",
@@ -113,7 +159,18 @@
         "duration": "00:15",
         "localPath": "media/outputs/case-003.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-003.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "audio"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-004",
@@ -139,7 +196,20 @@
         "duration": "00:14",
         "localPath": "media/outputs/case-004.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-004.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "audio",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-005",
@@ -165,7 +235,20 @@
         "duration": "00:10",
         "localPath": "media/outputs/case-005.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-005.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "audio",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-006",
@@ -217,7 +300,20 @@
         "duration": "00:15",
         "localPath": "media/outputs/case-006.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-006.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "image-reference",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-007",
@@ -264,7 +360,20 @@
         "duration": "00:00",
         "localPath": "media/outputs/case-007.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-007.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "image-reference",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-008",
@@ -305,7 +414,19 @@
         "duration": "00:13",
         "localPath": "media/outputs/case-008.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-008.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "image-reference",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-009",
@@ -331,7 +452,20 @@
         "duration": "00:10",
         "localPath": "media/outputs/case-009.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-009.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "audio",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-010",
@@ -357,7 +491,18 @@
         "duration": "00:10",
         "localPath": "media/outputs/case-010.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-010.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-011",
@@ -377,7 +522,18 @@
         "duration": "00:10",
         "localPath": "media/outputs/case-011.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-011.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-012",
@@ -434,7 +590,19 @@
         "duration": "00:00",
         "localPath": "media/outputs/case-012.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-012.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-013",
@@ -454,7 +622,18 @@
         "duration": "00:15",
         "localPath": "media/outputs/case-013.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-013.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "audio"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-014",
@@ -496,7 +675,20 @@
         "duration": "00:00",
         "localPath": "media/outputs/case-014.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-014.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "image-reference",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-015",
@@ -533,7 +725,20 @@
         "duration": "00:15",
         "localPath": "media/outputs/case-015.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-015.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "audio",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-016",
@@ -559,7 +764,18 @@
         "duration": "00:15",
         "localPath": "media/outputs/case-016.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-016.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-017",
@@ -590,7 +806,18 @@
         "duration": "00:10",
         "localPath": "media/outputs/case-017.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-017.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-018",
@@ -626,7 +853,20 @@
         "duration": "00:15",
         "localPath": "media/outputs/case-018.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-018.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "image-reference",
+        "audio",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-019",
@@ -657,7 +897,20 @@
         "duration": "00:06",
         "localPath": "media/outputs/case-019.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-019.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "audio",
+        "camera",
+        "commercial"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-020",
@@ -677,7 +930,18 @@
         "duration": "00:10",
         "localPath": "media/outputs/case-020.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-020.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-021",
@@ -713,7 +977,20 @@
         "duration": "00:10",
         "localPath": "media/outputs/case-021.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-021.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "image-reference",
+        "camera",
+        "commercial"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-022",
@@ -755,7 +1032,19 @@
         "duration": "00:15",
         "localPath": "media/outputs/case-022.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-022.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "audio"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-023",
@@ -791,7 +1080,20 @@
         "duration": "00:00",
         "localPath": "media/outputs/case-023.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-023.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "audio",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-024",
@@ -848,7 +1150,20 @@
         "duration": "00:10",
         "localPath": "media/outputs/case-024.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-024.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "image-reference",
+        "audio"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-025",
@@ -874,7 +1189,19 @@
         "duration": "00:10",
         "localPath": "media/outputs/case-025.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-025.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "audio",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-026",
@@ -900,7 +1227,19 @@
         "duration": "00:15",
         "localPath": "media/outputs/case-026.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-026.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "image-reference",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-027",
@@ -926,7 +1265,19 @@
         "duration": "00:05",
         "localPath": "media/outputs/case-027.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-027.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-028",
@@ -952,7 +1303,18 @@
         "duration": "00:15",
         "localPath": "media/outputs/case-028.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-028.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-029",
@@ -978,7 +1340,19 @@
         "duration": "00:15",
         "localPath": "media/outputs/case-029.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-029.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-030",
@@ -1014,7 +1388,18 @@
         "duration": "00:12",
         "localPath": "media/outputs/case-030.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-030.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "commercial"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-031",
@@ -1050,7 +1435,19 @@
         "duration": "00:14",
         "localPath": "media/outputs/case-031.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-031.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "image-reference",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-032",
@@ -1082,7 +1479,19 @@
         "duration": "00:15",
         "localPath": "media/outputs/case-032.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-032.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "audio"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-033",
@@ -1108,7 +1517,18 @@
         "duration": "00:13",
         "localPath": "media/outputs/case-033.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-033.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-034",
@@ -1155,7 +1575,19 @@
         "duration": "00:05",
         "localPath": "media/outputs/case-034.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-034.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "image-reference"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-035",
@@ -1181,7 +1613,20 @@
         "duration": "00:15",
         "localPath": "media/outputs/case-035.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-035.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "audio",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-036",
@@ -1207,7 +1652,16 @@
         "duration": "00:10",
         "localPath": "media/outputs/case-036.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-036.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-037",
@@ -1239,7 +1693,19 @@
         "duration": "00:13",
         "localPath": "media/outputs/case-037.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-037.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "image-reference"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-038",
@@ -1265,7 +1731,18 @@
         "duration": "00:15",
         "localPath": "media/outputs/case-038.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-038.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-039",
@@ -1306,7 +1783,19 @@
         "duration": "00:06",
         "localPath": "media/outputs/case-039.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-039.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "image-reference",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-040",
@@ -1352,7 +1841,19 @@
         "duration": "00:14",
         "localPath": "media/outputs/case-040.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-040.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "image-reference",
+        "camera"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-041",
@@ -1409,7 +1910,20 @@
         "duration": "00:10",
         "localPath": "media/outputs/case-041.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-041.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "image-reference",
+        "audio"
+      ],
+      "promptLanguage": "mixed"
     },
     {
       "id": "case-042",
@@ -1446,7 +1960,1044 @@
         "duration": "00:08",
         "localPath": "media/outputs/case-042.mp4",
         "status": "pending"
-      }
+      },
+      "sourcePlatform": "Lark Document",
+      "sourceUrl": "https://bytedance.larkoffice.com/wiki/A5RHwWhoBiOnjukIIw6cu5ybnXQ",
+      "author": "ByteDance Seedance 2.0 document",
+      "sourceLicense": "Source document attribution",
+      "coverImage": "media/covers/case-042.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-14T15:58:05.489Z",
+      "tags": [
+        "video-reference",
+        "image-reference"
+      ],
+      "promptLanguage": "mixed"
+    },
+    {
+      "id": "case-043",
+      "title": "Professional Portrait",
+      "category": "人物与写实",
+      "duration": "00:04",
+      "prompt": "A professional woman in her 30s, wearing a tailored navy blazer, sitting in a modern office. She looks directly at camera with a confident smile. Soft natural light from a large window. Slow dolly-in focusing on her face.\n\nCamera: Medium close-up, 85mm lens feel, slow dolly-in over 4 seconds\nStyle: Corporate headshot, warm professional lighting, shallow depth of field",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#11-professional-portrait",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-043.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "portrait",
+        "dolly-in",
+        "corporate",
+        "camera"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Professional Portrait",
+        "duration": "00:04",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#11-professional-portrait"
+    },
+    {
+      "id": "case-044",
+      "title": "Dramatic Character Reveal",
+      "category": "人物与写实",
+      "duration": "00:06",
+      "prompt": "A mysterious figure emerges from shadows into golden hour light. Long black coat billowing slightly. They pause, turn to face camera with intense eyes.\n\nCamera: Start wide shot, then slow dolly-in to close-up\nStyle: Cinematic, high contrast, film noir meets modern thriller\nLighting: Dramatic rim light, golden hour warmth on face",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#12-dramatic-character-reveal",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-044.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "character",
+        "reveal",
+        "cinematic",
+        "camera"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Dramatic Character Reveal",
+        "duration": "00:06",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#12-dramatic-character-reveal"
+    },
+    {
+      "id": "case-045",
+      "title": "Athletic Action Shot",
+      "category": "动作复刻",
+      "duration": "00:06",
+      "prompt": "An athlete in a professional tracksuit. Legs alternate rapidly, arms swing powerfully, sprinting with all his strength on the field. After crossing the finish line, the audience erupts in cheers.\n\nCamera: Tracking shot following the runner, 24fps cinematic\nStyle: Sports documentary, high dynamic range",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#13-athletic-action-shot",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-045.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "sports",
+        "tracking-shot",
+        "action",
+        "camera"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Athletic Action Shot",
+        "duration": "00:06",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#13-athletic-action-shot"
+    },
+    {
+      "id": "case-046",
+      "title": "Brand Mascot Journey",
+      "category": "商业创意",
+      "duration": "00:12",
+      "prompt": "Show a brand mascot interacting with multiple environments, such as a park, office, and home, without changing its color palette or expressions. Reference @Image1 for mascot design.\n\nCamera switch: Park to Office to Home, smooth transitions between scenes\nConsistency: Maintain exact color palette #FF5733, expression style, movement characteristics",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#22-brand-mascot-journey",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-046.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "brand",
+        "mascot",
+        "consistency",
+        "image-reference",
+        "camera",
+        "commercial"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [
+          {
+            "label": "Reference image",
+            "localPath": "",
+            "status": "source-reference"
+          }
+        ],
+        "videos": []
+      },
+      "output": {
+        "label": "Brand Mascot Journey",
+        "duration": "00:12",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#22-brand-mascot-journey"
+    },
+    {
+      "id": "case-047",
+      "title": "Character Dialogue Scene",
+      "category": "情绪与声音",
+      "duration": "00:08",
+      "prompt": "Reference @Image1 for the character's face. Apply camera movement from @Video1. Match the pacing to @Audio1. Modern office setting, professional lighting.\n\nThe character speaks naturally with realistic lip movements. [Dialogue: \"Welcome to our new product launch. Let me show you something amazing.\"]\n\nCamera: Medium shot, slight push-in during key dialogue moments",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#23-character-dialogue-scene",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-047.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "dialogue",
+        "lip-sync",
+        "reference",
+        "video-reference",
+        "image-reference",
+        "audio"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [
+          {
+            "label": "Reference image",
+            "localPath": "",
+            "status": "source-reference"
+          }
+        ],
+        "videos": [
+          {
+            "label": "Reference video",
+            "localPath": "",
+            "status": "source-reference"
+          }
+        ]
+      },
+      "output": {
+        "label": "Character Dialogue Scene",
+        "duration": "00:08",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#23-character-dialogue-scene"
+    },
+    {
+      "id": "case-048",
+      "title": "Product Unboxing",
+      "category": "商业创意",
+      "duration": "00:10",
+      "prompt": "Show a product unboxing with close-up shots, animated text highlighting features, and smooth panning to focus on brand logos. Premium product on white background.\n\nCamera: Start top-down, transition to 45-degree angle, end with close-up on logo\nStyle: Clean, minimalist, Apple-style product photography\nLighting: Soft studio lighting, subtle reflections",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#31-product-unboxing",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-048.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "product",
+        "unboxing",
+        "studio",
+        "camera",
+        "commercial"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Product Unboxing",
+        "duration": "00:10",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#31-product-unboxing"
+    },
+    {
+      "id": "case-049",
+      "title": "Lifestyle Product Integration",
+      "category": "商业创意",
+      "duration": "00:15",
+      "prompt": "Create a lifestyle ad showing people using the product in different daily scenarios, keeping brand colors and logo visible. Morning coffee, afternoon work, evening relaxation.\n\nCamera: Handheld documentary style, natural movements\nStyle: Warm, authentic, lifestyle brand aesthetic\nDuration: 15 seconds, 3 distinct scenes",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#32-lifestyle-product-integration",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-049.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "lifestyle",
+        "ad",
+        "multi-scene",
+        "camera",
+        "commercial"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Lifestyle Product Integration",
+        "duration": "00:15",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#32-lifestyle-product-integration"
+    },
+    {
+      "id": "case-050",
+      "title": "Food & Beverage Commercial",
+      "category": "商业创意",
+      "duration": "00:08",
+      "prompt": "A steaming cup of premium coffee on a rustic wooden table. Cream pours slowly into the dark coffee, creating beautiful swirling patterns. Morning light streams through window.\n\nCamera: Macro close-up, slow motion pour at 120fps feel\nStyle: Warm, cozy, coffee commercial aesthetic\nAudio: Gentle pouring sound, ambient morning atmosphere",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#33-food--beverage-commercial",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-050.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "food",
+        "macro",
+        "slow-motion",
+        "audio",
+        "camera",
+        "commercial"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Food & Beverage Commercial",
+        "duration": "00:08",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#33-food--beverage-commercial"
+    },
+    {
+      "id": "case-051",
+      "title": "Tech Product Demo",
+      "category": "商业创意",
+      "duration": "00:08",
+      "prompt": "A sleek smartphone rotates on a reflective surface. The screen lights up showing app interface. Holographic UI elements appear around the device.\n\nCamera: 360-degree orbit around product, slow and smooth\nStyle: Futuristic, premium tech, dark background with accent lighting\nVFX: Subtle particle effects, holographic overlays",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#34-tech-product-demo",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-051.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "tech",
+        "orbit",
+        "vfx",
+        "camera",
+        "commercial"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Tech Product Demo",
+        "duration": "00:08",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#34-tech-product-demo"
+    },
+    {
+      "id": "case-052",
+      "title": "Meme-Style Comedy",
+      "category": "社媒短片",
+      "duration": "00:08",
+      "prompt": "Create a fast-paced video of a cat knocking over objects with exaggerated reactions, meme-style captions, and quick zooms for comedic effect.\n\nCamera: Quick cuts, sudden zoom-ins on reactions\nStyle: Meme aesthetic, bold text overlays, exaggerated motion\nPacing: Fast-paced, comedic timing, 5-second intervals",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#41-meme-style-comedy",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-052.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "meme",
+        "comedy",
+        "quick-zoom",
+        "video-reference",
+        "camera"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Meme-Style Comedy",
+        "duration": "00:08",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#41-meme-style-comedy"
+    },
+    {
+      "id": "case-053",
+      "title": "Morning Routine Montage",
+      "category": "社媒短片",
+      "duration": "00:12",
+      "prompt": "Show a morning routine of a college student with upbeat background music, jump cuts between scenes, and text overlays highlighting key moments.\n\nCamera: Jump cuts every 2-3 seconds, mix of angles\nStyle: TikTok/Instagram aesthetic, bright and energetic\nAudio reference: @Audio1 for upbeat rhythm",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#42-morning-routine-montage",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-053.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "montage",
+        "jump-cuts",
+        "social",
+        "audio",
+        "camera"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Morning Routine Montage",
+        "duration": "00:12",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#42-morning-routine-montage"
+    },
+    {
+      "id": "case-054",
+      "title": "Before & After Transformation",
+      "category": "社媒短片",
+      "duration": "00:10",
+      "prompt": "Split-screen transformation showing fitness journey. Left side shows starting point, right side shows result. Dramatic reveal at the end.\n\nCamera: Static framing, synchronized movements on both sides\nStyle: Motivational content, high contrast, inspiring\nTransition: Dramatic reveal with light flash effect",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#43-before--after-transformation",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-054.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "transformation",
+        "split-screen",
+        "social",
+        "camera"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Before & After Transformation",
+        "duration": "00:10",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#43-before--after-transformation"
+    },
+    {
+      "id": "case-055",
+      "title": "CEO Revenge Story",
+      "category": "多镜头叙事",
+      "duration": "00:15",
+      "prompt": "Style: Modern corporate, revenge fantasy, power dynamics, designer suits\n\nSetup: Open-plan luxury office, floor-to-ceiling windows, city skyline\n\nScene 1: Humble employee receives dismissal letter, colleagues smirk\n[Dialogue: \"You're fired. Security will escort you out.\"]\n\nScene 2: 6 months later. Same employee returns in designer suit, buys the company. Former boss's face turns pale.\n[Dialogue: \"I believe you're sitting in MY chair.\"]\n\nScene 3: Employee sits in CEO chair, spins around dramatically. Former colleagues bow. Smirk.\n[Dialogue: \"Meeting in 5 minutes. Don't be late.\"]\n\nCamera: Power shots from below, dramatic reveals, reaction close-ups\nLighting: Golden hour through windows, dramatic shadows\nDuration: 15 seconds",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#46-ceo-revenge-story-",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-055.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "short-drama",
+        "dialogue",
+        "corporate",
+        "audio",
+        "camera"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "CEO Revenge Story",
+        "duration": "00:15",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#46-ceo-revenge-story-"
+    },
+    {
+      "id": "case-056",
+      "title": "Cyberpunk Transformation",
+      "category": "风格与特效",
+      "duration": "00:10",
+      "prompt": "Transform a daytime city street into a neon-illuminated cyberpunk environment with rain reflections, animated signs, and moving vehicles. Reference @Video1 for original footage.\n\nStyle transfer: Day to Night, natural to cyberpunk neon\nVFX: Add rain, reflections, animated holographic signs\nColor grade: High contrast, teal and orange, neon accents",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#51-cyberpunk-transformation",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-056.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "style-transfer",
+        "cyberpunk",
+        "vfx",
+        "video-reference"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": [
+          {
+            "label": "Reference video",
+            "localPath": "",
+            "status": "source-reference"
+          }
+        ]
+      },
+      "output": {
+        "label": "Cyberpunk Transformation",
+        "duration": "00:10",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#51-cyberpunk-transformation"
+    },
+    {
+      "id": "case-057",
+      "title": "Anime Style Application",
+      "category": "风格与特效",
+      "duration": "00:10",
+      "prompt": "Transform realistic footage into anime style while maintaining motion and composition. Reference @Video1 for source, @Image1 for anime style guide.\n\nStyle: Anime cell-shading, bold outlines, stylized expressions\nMaintain: Original motion, camera work, scene composition\nColor: Vibrant anime palette, clean gradients",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#53-anime-style-application",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-057.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "anime",
+        "style-transfer",
+        "reference",
+        "video-reference",
+        "image-reference",
+        "camera"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [
+          {
+            "label": "Reference image",
+            "localPath": "",
+            "status": "source-reference"
+          }
+        ],
+        "videos": [
+          {
+            "label": "Reference video",
+            "localPath": "",
+            "status": "source-reference"
+          }
+        ]
+      },
+      "output": {
+        "label": "Anime Style Application",
+        "duration": "00:10",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#53-anime-style-application"
+    },
+    {
+      "id": "case-058",
+      "title": "Vintage Film Look",
+      "category": "风格与特效",
+      "duration": "00:10",
+      "prompt": "Apply vintage 1960s film aesthetic to modern footage. Add film grain, color shift, light leaks, and period-appropriate color grading.\n\nStyle: Vintage Kodachrome, nostalgic warmth\nVFX: Film grain, subtle light leaks, vignette\nColor: Faded highlights, warm shadows, reduced saturation",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#54-vintage-film-look",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-058.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "film-look",
+        "color-grade",
+        "vfx"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Vintage Film Look",
+        "duration": "00:10",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#54-vintage-film-look"
+    },
+    {
+      "id": "case-059",
+      "title": "Chase Scene Sequence",
+      "category": "多镜头叙事",
+      "duration": "00:15",
+      "prompt": "Storyboard a chase scene in a busy city with multiple camera angles, dynamic character movements, and realistic environmental interactions.\n\nShot 1: Wide establishing - city street, target spotted\nCamera switch to Shot 2: Close-up pursuer's determined face, starts running\nCamera switch to Shot 3: POV shot weaving through crowd\nCamera switch to Shot 4: Aerial drone view of the chase\n\nMaintain: Character consistency, spatial continuity, escalating tension",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#61-chase-scene-sequence",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-059.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "storyboard",
+        "chase",
+        "multi-shot",
+        "camera"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Chase Scene Sequence",
+        "duration": "00:15",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#61-chase-scene-sequence"
+    },
+    {
+      "id": "case-060",
+      "title": "Product Story Arc",
+      "category": "多镜头叙事",
+      "duration": "00:15",
+      "prompt": "Tell a product story in 3 acts:\n\nAct 1 (Problem): Person struggling with traditional solution, frustrated expression\nCamera switch to Act 2 (Solution): Product introduction, amazed reaction, demonstration\nCamera switch to Act 3 (Result): Happy user, lifestyle improvement, call to action\n\nCharacter lock: Same person throughout, consistent wardrobe\nDuration: 30 seconds total, 10 seconds per act",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#62-product-story-arc",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-060.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "product-story",
+        "three-act",
+        "ad",
+        "camera",
+        "commercial"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Product Story Arc",
+        "duration": "00:15",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#62-product-story-arc"
+    },
+    {
+      "id": "case-061",
+      "title": "Emotional Mini-Drama",
+      "category": "多镜头叙事",
+      "duration": "00:15",
+      "prompt": "A touching reunion scene between parent and child at airport:\n\nShot 1: Child waiting anxiously, checking time, wide shot of arrivals\nCamera switch to Shot 2: Parent appears in doorway, freeze moment of recognition\nCamera switch to Shot 3: Slow motion run towards each other\nCamera switch to Shot 4: Embrace, close-up on emotional faces\n\nAudio: Swelling emotional music, synchronized with visual beats\nLip-sync: [Dialogue: \"I missed you so much\"]",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#63-emotional-mini-drama",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-061.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "drama",
+        "emotion",
+        "multi-shot",
+        "audio",
+        "camera"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Emotional Mini-Drama",
+        "duration": "00:15",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#63-emotional-mini-drama"
+    },
+    {
+      "id": "case-062",
+      "title": "Multilingual Dialogue",
+      "category": "声音与口型",
+      "duration": "00:10",
+      "prompt": "Business meeting with multilingual conversation:\n\nCharacter 1 speaks: [English: \"Let me present our quarterly results.\"]\nCharacter 2 responds: [Mandarin: \"数据看起来很不错。\"]\nCharacter 3 adds: [Japanese: \"はい、素晴らしい成長ですね。\"]\n\nReference @Audio1 for timing and rhythm\nLip-sync: Phoneme-level accuracy for each language\nScene: Modern conference room, professional lighting",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#71-multilingual-dialogue",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-062.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "multilingual",
+        "lip-sync",
+        "audio"
+      ],
+      "promptLanguage": "mixed",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Multilingual Dialogue",
+        "duration": "00:10",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#71-multilingual-dialogue"
+    },
+    {
+      "id": "case-063",
+      "title": "Music Video Sync",
+      "category": "音乐卡点",
+      "duration": "00:10",
+      "prompt": "Create a smooth video using @Image1 as the main reference. Add natural head, eye, and ear movements. Sync expressions with the playful music rhythm.\n\nReference @Audio1 for BGM timing\nMovement: Hit the beat with subtle body movements\nExpression: Match emotional tone of music\nCamera: Dynamic but synchronized with music beats",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#72-music-video-sync",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-063.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "music-sync",
+        "audio",
+        "beat",
+        "video-reference",
+        "image-reference",
+        "camera"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [
+          {
+            "label": "Reference image",
+            "localPath": "",
+            "status": "source-reference"
+          }
+        ],
+        "videos": []
+      },
+      "output": {
+        "label": "Music Video Sync",
+        "duration": "00:10",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#72-music-video-sync"
+    },
+    {
+      "id": "case-064",
+      "title": "Sound Effect Integration",
+      "category": "声音与口型",
+      "duration": "00:06",
+      "prompt": "A glass falls from table in slow motion. Impact with floor, shattering into pieces. Dual-branch audio generation for realistic sound.\n\nAudio:\n- Build-up: Tense silence as glass tips\n- Impact: Crisp shatter sound perfectly synced\n- Aftermath: Tinkling of settling pieces\n\nCamera: High-speed slow motion, focus pull from glass to shards",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#73-sound-effect-integration",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-064.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "sound-effects",
+        "slow-motion",
+        "audio",
+        "camera"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Sound Effect Integration",
+        "duration": "00:06",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#73-sound-effect-integration"
+    },
+    {
+      "id": "case-065",
+      "title": "Voice-Over Commercial",
+      "category": "声音与口型",
+      "duration": "00:08",
+      "prompt": "Product showcase with professional voice-over:\n\n[Voice-over English: \"Introducing the next generation of innovation.\"]\n\nVisual: Product reveal with dramatic lighting\nAudio: Voice-over synced with visual reveals\nTiming: Key features appear as mentioned in voice-over\nBackground: Subtle ambient music @Audio1",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#74-voice-over-commercial",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-065.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "voice-over",
+        "commercial",
+        "audio"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Voice-Over Commercial",
+        "duration": "00:08",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#74-voice-over-commercial"
+    },
+    {
+      "id": "case-066",
+      "title": "Dolly Movement",
+      "category": "运镜技巧",
+      "duration": "00:04",
+      "prompt": "Slow dolly-in on character's face capturing emotional reaction. Start medium shot, end close-up over 4 seconds. Draw audience into the moment.\n\nCamera: Slow dolly-in, 1-2 feet movement\nSpeed: Gradual acceleration towards end\nLens feel: 50mm natural perspective",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#81-dolly-movements",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-066.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "dolly-in",
+        "camera",
+        "close-up"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Dolly Movement",
+        "duration": "00:04",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#81-dolly-movements"
+    },
+    {
+      "id": "case-067",
+      "title": "Compound Camera Movement",
+      "category": "运镜技巧",
+      "duration": "00:06",
+      "prompt": "Start: Slow dolly-in establishing the scene\nThen: Gentle pan right for the final 2 seconds\n\nNote: Structure compound moves as beats for better control. Seedance respects the sequence better than jamming both into one clause.",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#82-compound-camera-movement",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-067.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "compound-camera",
+        "pan",
+        "dolly",
+        "camera"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Compound Camera Movement",
+        "duration": "00:06",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#82-compound-camera-movement"
+    },
+    {
+      "id": "case-068",
+      "title": "Tracking Shot",
+      "category": "运镜技巧",
+      "duration": "00:08",
+      "prompt": "Camera follows runner through urban environment. Parallel tracking maintaining consistent distance. Subject stays in frame center.\n\nCamera: Side tracking shot, gimbal-smooth movement\nSpeed: Match subject's running pace\nFocus: Shallow depth of field on subject",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#83-tracking-shot",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-068.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "tracking-shot",
+        "gimbal",
+        "runner",
+        "camera"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Tracking Shot",
+        "duration": "00:08",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#83-tracking-shot"
+    },
+    {
+      "id": "case-069",
+      "title": "Crane Movement",
+      "category": "运镜技巧",
+      "duration": "00:06",
+      "prompt": "Start low near ground level, crane up revealing cityscape. Dramatic scale change from intimate to epic.\n\nCamera: Crane up from ground to aerial view\nDuration: 6 seconds\nStyle: Cinematic establishing shot\nReference @Video1 for crane movement pattern",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#84-crane-movement",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-069.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "crane",
+        "camera",
+        "establishing",
+        "video-reference"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": [
+          {
+            "label": "Reference video",
+            "localPath": "",
+            "status": "source-reference"
+          }
+        ]
+      },
+      "output": {
+        "label": "Crane Movement",
+        "duration": "00:06",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#84-crane-movement"
+    },
+    {
+      "id": "case-070",
+      "title": "Handheld Documentary",
+      "category": "运镜技巧",
+      "duration": "00:08",
+      "prompt": "Authentic documentary feel following subject through daily activities. Natural camera shake, reactive framing.\n\nCamera: Handheld, organic movement, slight shake\nStyle: Verite documentary, authentic moments\nFocus: Reactive focus pulls on action",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#85-handheld-documentary",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-070.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.560Z",
+      "tags": [
+        "handheld",
+        "documentary",
+        "camera"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [],
+        "videos": []
+      },
+      "output": {
+        "label": "Handheld Documentary",
+        "duration": "00:08",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#85-handheld-documentary"
+    },
+    {
+      "id": "case-071",
+      "title": "Frame-to-Frame Transition",
+      "category": "镜头连贯",
+      "duration": "00:08",
+      "prompt": "A smooth, natural video transition between first and last frame showing [subject]. The [character type] gently moves, blinks, and smiles with soft, realistic facial expressions.\n\nReference @Image1 as first frame\nReference @Image2 as last frame\nTransition: Organic morph maintaining subject identity",
+      "sourcePlatform": "GitHub",
+      "sourceUrl": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#frame-to-frame-transitions",
+      "author": "makesupday/Awesome-Seedance-2.0-Prompt-and-Examples contributors",
+      "sourceLicense": "MIT",
+      "coverImage": "media/covers/case-071.svg",
+      "coverStatus": "generated",
+      "collectedAt": "2026-05-15T03:07:41.561Z",
+      "tags": [
+        "transition",
+        "first-frame",
+        "last-frame",
+        "video-reference",
+        "image-reference"
+      ],
+      "promptLanguage": "en",
+      "caution": "",
+      "inputs": {
+        "images": [
+          {
+            "label": "Reference image",
+            "localPath": "",
+            "status": "source-reference"
+          }
+        ],
+        "videos": []
+      },
+      "output": {
+        "label": "Frame-to-Frame Transition",
+        "duration": "00:08",
+        "localPath": "",
+        "status": "not-collected"
+      },
+      "source": "https://github.com/makesupday/Awesome-Seedance-2.0-Prompt-and-Examples#frame-to-frame-transitions"
     }
   ]
 }

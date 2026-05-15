@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="2月5日 jimeng-2026-02-05-9009">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#102a43"/>
+      <stop offset="55%" stop-color="#2ec4b6"/>
+      <stop offset="100%" stop-color="#f6d365"/>
+    </linearGradient>
+    <radialGradient id="light" cx="65%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.12"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#light)"/>
+  <rect width="1280" height="720" filter="url(#grain)" opacity="0.32"/>
+  <g opacity="0.34" fill="none" stroke="#fff" stroke-width="2">
+    <path d="M80 560 C260 420 360 640 540 500 S850 390 1180 520"/>
+    <path d="M120 150 C320 70 470 210 640 140 S940 30 1160 150"/>
+  </g>
+  <rect x="70" y="74" width="1140" height="572" rx="34" fill="#0b0f12" opacity="0.28" stroke="#fff" stroke-opacity="0.24"/>
+  <text x="104" y="132" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="2">Lark Document</text>
+  <text x="104" y="178" fill="#ffffff" opacity="0.82" font-family="Inter, Arial, sans-serif" font-size="24">音乐卡点 · 00:10</text>
+  <text x="104" y="312" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">2月5日</text>
+  <text x="104" y="384" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">jimeng-2026-02-05-9009</text>
+  <text x="104" y="574" fill="#ffffff" opacity="0.78" font-family="Inter, Arial, sans-serif" font-size="24">video-reference / image-reference / audio</text>
+  <circle cx="1090" cy="538" r="72" fill="#ffffff" opacity="0.92"/>
+  <path d="M1072 500 L1072 576 L1138 538 Z" fill="#111827"/>
+</svg>

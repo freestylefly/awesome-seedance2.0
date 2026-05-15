@@ -4,8 +4,8 @@
   <path d="M0 286C170 235 323 244 488 290C640 333 792 322 948 258C1045 218 1127 206 1200 218V360H0V286Z" fill="#C84C32" fill-opacity="0.78"/>
   <rect x="78" y="72" width="1044" height="216" rx="24" fill="white" fill-opacity="0.07" stroke="white" stroke-opacity="0.14"/>
   <text x="110" y="142" fill="#E8E4D8" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Awesome Seedance 2.0</text>
-  <text x="110" y="200" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="800">Multimodal Video Case Library</text>
-  <text x="112" y="244" fill="#D8D2C4" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500">Prompt, reference assets, output video slots, and reproducible case data</text>
+  <text x="110" y="200" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="800">Seedance Prompt Library</text>
+  <text x="112" y="244" fill="#D8D2C4" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500">Complete prompts, source attribution, video-style covers, and reusable case data</text>
   <g transform="translate(930 88)">
     <rect width="142" height="142" rx="28" fill="#D6A23A"/>
     <path d="M53 42L96 71L53 100V42Z" fill="#121514"/>
